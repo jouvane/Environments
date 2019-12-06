@@ -4,7 +4,7 @@ If(-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentit
      throw "Run command in Administrator PowerShell Prompt"
 }
 
-Set-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' Hidden 1
+Set-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' Hidden 0
 Set-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' HideFileExt 0
 Set-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' ShowSuperHidden 1
 
@@ -32,7 +32,9 @@ choco install openjdk
 choco install nuget.commandline
 choco install microsoft-windows-terminal
 
+choco install docker-desktop
 choco install docker-cli
+choco install docker-compose
 choco install redis
 choco install mongodb
 	
@@ -72,9 +74,12 @@ choco install crystaldiskmark
 # Games
 ##################	
 choco install msiafterburner
+choco install geforce-experience
+choco install geforce-game-ready-driver
 choco install razer-synapse-2
 choco install steam
 choco install origin
+choco install leagueoflegends
 
 ##################
 # Add-AppxPackage
