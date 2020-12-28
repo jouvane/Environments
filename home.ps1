@@ -17,6 +17,7 @@ choco feature enable -n allowGlobalConfirmation
 ##################
 choco install git
 choco install git-credential-manager-for-windows
+choco install delta
 choco install tortoisesvn
 
 choco install visualstudio2019enterprise --package-parameters "--locale en-US"
