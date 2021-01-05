@@ -2,90 +2,81 @@
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "alwaysShowTabs": true,
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-    "initialCols": 120,
-    "initialRows": 30,
+    "initialCols": 150,
+    "initialRows": 35,
     "requestedTheme": "dark",
     "showTabsInTitlebar": true,
     "showTerminalTitleInTitlebar": true,
-    "profiles": [
-        {
-            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-            "name": "Ubuntu",
-            "source": "Windows.Terminal.Wsl",
-            "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+    "profiles": {
+        "defaults": {
+            "bellStyle": "none",
+            "fontFace": "Cascadia Code PL",
+            "fontSize": 12,
+            "snapOnInput": true,
             "startingDirectory": "%USERPROFILE%",
-            "hidden": false,
-            "acrylicOpacity": 0.85000002384185791,
-            "backgroundImage": "ms-appdata:///Local/unicorn-blue.gif",
-            "backgroundImageOpacity": 0.5,
-            "backgroundImageStretchMode": "uniformToFill",
-            "colorScheme": "Campbell"
-        },
-        {
-            "guid": "{7f586916-8357-53d4-bb2b-ca96f639898a}",
-            "name": "WLinux",
-            "source": "Windows.Terminal.Wsl",
-            "startingDirectory": "%USERPROFILE%",
-            "hidden": false,
-            "acrylicOpacity": 0.85000002384185791,
-            "backgroundImage": "ms-appdata:///Local/unicorn-blue.gif",
-            "backgroundImageOpacity": 0.5,
-            "backgroundImageStretchMode": "uniformToFill",
-            "colorScheme": "Campbell"
-        },
-        {
-            "guid": "{6AD5F582-2334-4B63-AE40-AAE6ADF8939B}",
-            "name": "git-bash",
-            "commandline": "%PROGRAMFILES%/git/usr/bin/bash.exe -i -l",
-            "icon": "ms-appdata:///Local/git-bash_32px.ico",
-            "startingDirectory": "%USERPROFILE%",
-            "hidden": false,
-            "acrylicOpacity": 0.85000002384185791,
-            "backgroundImage": "ms-appdata:///Local/unicorn-blue.gif",
-            "backgroundImageOpacity": 0.5,
-            "backgroundImageStretchMode": "uniformToFill",
-            "colorScheme": "Campbell"
-        },
-        {
-            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "name": "Windows PowerShell",
-            "commandline": "powershell.exe",
-            "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
-            "startingDirectory": "%USERPROFILE%",
-            "hidden": false,
-            "acrylicOpacity": 0.85000002384185791,
-            "backgroundImage": "ms-appdata:///Local/unicorn-blue.gif",
-            "backgroundImageOpacity": 0.5,
-            "backgroundImageStretchMode": "uniformToFill",
-            "colorScheme": "Campbell"
-        },
-        {
-            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "name": "cmd",
-            "commandline": "cmd.exe",
-            "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-            "startingDirectory": "%USERPROFILE%",
-            "hidden": false,
-            "acrylicOpacity": 0.85000002384185791,
-            "backgroundImage": "ms-appdata:///Local/unicorn-blue.gif",
-            "backgroundImageOpacity": 0.5,
-            "backgroundImageStretchMode": "uniformToFill",
-            "colorScheme": "Campbell"
-        },
-        {
-            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-            "name": "Azure Cloud Shell",
-            "source": "Windows.Terminal.Azure",
-            "icon": "ms-appx:///ProfileIcons/{b453ae62-4e3d-5e58-b989-0a998ec441b8}.png",
-            "startingDirectory": "%USERPROFILE%",
-            "hidden": false,
-            "acrylicOpacity": 0.85000002384185791,
             "backgroundImage": "ms-appdata:///Local/unicorn-blue.gif",
             "backgroundImageOpacity": 0.3,
             "backgroundImageStretchMode": "uniformToFill",
-            "colorScheme": "Campbell"
-        }
-    ],
+            "acrylicOpacity": 0.9,
+            "useAcrylic": false,
+            "closeOnExit": "always",
+            "colorScheme": "Campbell",
+            "padding": "0, 0, 0, 0",
+            "historySize": 9001,
+            "suppressApplicationTitle": true,
+            "cursorColor": "#FFFFFF",
+            "cursorShape": "filledBox"
+        },
+        "list": [
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "tabTitle": "Ubuntu",
+                "tabColor": "#DD4814"
+            },
+            {
+                "guid": "{7f586916-8357-53d4-bb2b-ca96f639898a}",
+                "name": "WLinux",
+                "source": "Windows.Terminal.Wsl",
+                "tabTitle": "Pengwin",
+                "tabColor": "#9551B5"
+            },
+            {
+                "guid": "{6AD5F582-2334-4B63-AE40-AAE6ADF8939B}",
+                "name": "git-bash",
+                "commandline": "%PROGRAMFILES%/git/usr/bin/bash.exe -i -l",
+                "icon": "ms-appdata:///Local/git-bash_32px.ico",
+                "tabTitle": "Git-bash",
+                "tabColor": "#F77C7C"
+            },
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+                "tabTitle": "PowerShell",
+                "tabColor": "#0173B7"
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+                "tabTitle": "cmd",
+                "tabColor": "#010101"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure",
+                "icon": "ms-appx:///ProfileIcons/{b453ae62-4e3d-5e58-b989-0a998ec441b8}.png",
+                "tabTitle": "Az Cloud",
+                "tabColor": "#0085CF"
+            }
+        ]
+    },
     "schemes": [
         {
             "name": "Campbell",
